@@ -5,7 +5,7 @@ on:
   # (optional) Run workflow manually
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
-  push: {branches: ["main"]}
+  push: {branches: ["main", "master"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: Loluwafemi/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }
+          token: ${{ secrets.METRICS_TOKEN }}
