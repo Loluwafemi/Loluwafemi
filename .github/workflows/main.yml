@@ -50,13 +50,7 @@ jobs:
           
       - uses: lowlighter/metrics@latest
         with:
-          template: repository
-          filename: studio/metrics.repository.svg
-          token: ${{ secrets.METRICS_TOKEN_WITH_SCOPES }}
-          user: lowlighter
-          repo: metrics
+          filename: studio/metrics.classic.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: header, repositories
           plugin_lines: yes
-          plugin_followup: yes
-          plugin_projects: yes
-          plugin_projects_repositories: lowlighter/metrics/projects/1
-
