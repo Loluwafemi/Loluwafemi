@@ -14,6 +14,11 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: lowlighter/metric@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: studio/github-metrics.svg
+          
       - uses: lowlighter/metrics@latest
         with:
           filename: studio/metrics.plugin.isocalendar.svg
@@ -48,9 +53,3 @@ jobs:
           plugin_habits_charts: yes
           config_timezone: Africa/Lagos
           
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: studio/metrics.classic.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: header, repositories
-          plugin_lines: yes
