@@ -13,4 +13,4 @@
 ![Metrics](studio/metrics.plugin.habits.charts.svg)
 
 #### Stats
-![Metrics](studio/github-metrics.svg)
+![Metrics](studio/metrics.classic.svg)
