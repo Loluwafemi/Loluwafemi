@@ -5,5 +5,9 @@
 
 ![Metrics](github-metrics.svg)
 
-#### My Expertise
+#### Expertise
 ![Metrics](metrics.plugin.topics.icons.svg)
+
+#### Achievements
+![Metrics](metrics.plugin.achievements.svg)
+
