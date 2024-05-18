@@ -1,13 +1,16 @@
 <a href="https://app.daily.dev/oluwafemi"><img src="https://api.daily.dev/devcards/v2/if6VpnHYCwT7Ofg19R2IP.png?type=wide&r=mkd" width="652" alt="Oluwafemi's Dev Card"/></a>
 
 #### Contributions
-![Metrics](metrics.plugin.isocalendar.svg)
+![Metrics](studio/metrics.plugin.isocalendar.svg)
 
 #### Expertise
-![Metrics](metrics.plugin.topics.icons.svg)
+![Metrics](studio/metrics.plugin.topics.icons.svg)
 
 #### Achievements
-![Metrics](metrics.plugin.achievements.svg)
+![Metrics](studio/metrics.plugin.achievements.svg)
+
+#### Activities
+![Metrics](studio/metrics.plugin.habits.charts.svg)
 
 #### Stats
-![Metrics](github-metrics.svg)
+![Metrics](studio/github-metrics.svg)
