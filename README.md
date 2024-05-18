@@ -4,3 +4,6 @@
 ![Metrics](metrics.plugin.isocalendar.svg)
 
 ![Metrics](github-metrics.svg)
+
+#### My Expertise
+![Metrics](metrics.plugin.topics.icons.svg)
