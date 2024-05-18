@@ -51,7 +51,7 @@ jobs:
 
       - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.classic.svg
+          filename: studio/metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           plugin_lines: yes
