@@ -30,15 +30,11 @@ jobs:
           plugin_topics_limit: 0
           plugin_topics_mode: icons
           
-      - uses: lowlighter/metrics@latest 
+          
+      - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.licenses.ratio.svg
+          filename: metrics.plugin.achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          template: repository
-          repo: metrics
-          plugin_licenses: yes
-          plugin_licenses_setup: bash -c '[[ -f package.json ]] && npm ci || true'
-          plugin_licenses_legal: no
-          plugin_licenses_ratio: yes
-      
+          plugin_achievements: yes
+          plugin_achievements_only: sponsor, maintainer, octonaut
