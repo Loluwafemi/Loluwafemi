@@ -25,8 +25,8 @@
 
 
 branch examples
-1. Branch Sample
+1. Branch Sample_two
 2. Working
 3. 4920
 4. our edition
-5. property
+5. property_two
