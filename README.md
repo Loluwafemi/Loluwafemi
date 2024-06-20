@@ -23,9 +23,3 @@
 </p>
 
 
-
-branch examples
-1. Parent
-2. Working
-3. 4920
-4. Getting Update for all branch sake
