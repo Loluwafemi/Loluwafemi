@@ -1,5 +1,7 @@
 <a href="https://app.daily.dev/oluwafemi"><img src="https://api.daily.dev/devcards/v2/if6VpnHYCwT7Ofg19R2IP.png?type=wide&r=mkd" width="652" alt="Oluwafemi's Dev Card"/></a>
 
+[![Femi's GitHub stats](https://github-readme-stats.vercel.app/api?username=Loluwafemi)](https://github.com/Loluwafemi/github-readme-stats)
+
 > #### Contributions Calendar
 ![Metrics](studio/metrics.plugin.isocalendar.svg)
 
