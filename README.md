@@ -1,6 +1,6 @@
 <a href="https://app.daily.dev/oluwafemi"><img src="https://api.daily.dev/devcards/v2/if6VpnHYCwT7Ofg19R2IP.png?type=wide&r=mkd" width="652" alt="Oluwafemi's Dev Card"/></a>
 
-[![Femi's GitHub stats](https://github-readme-stats.vercel.app/api?username=Loluwafemi&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true)](https://github.com/Loluwafemi/github-readme-stats)
+[![Femi's GitHub stats](https://github-readme-stats.vercel.app/api?username=Loluwafemi&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&show_icons=true&theme=transparent)](https://github.com/Loluwafemi/github-readme-stats)
 
 > #### Contributions Calendar
 ![Metrics](studio/metrics.plugin.isocalendar.svg)
