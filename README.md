@@ -17,7 +17,7 @@
 > #### Stats
 ![Metrics](studio/metrics.classic.svg)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Loluwafemi&langs_count=20)](https://github.com/Loluwafemi/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Loluwafemi&langs_count=20&layout=donut)](https://github.com/Loluwafemi/github-readme-stats)
 
 
 > #### Demo Snake 🐍
