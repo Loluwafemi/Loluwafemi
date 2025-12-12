@@ -17,16 +17,16 @@ jobs:
         uses: actions/checkout@v4
 
       # Single-plugin steps (pinned, with base consistency)
-      - uses: lowlighter/metrics@v4.7.0  # Pin to stable version
+      - uses: lowlighter/metrics@latest  # Pin to stable version
         with:
           filename: studio/metrics.plugin.isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: "header"  # Add for consistency
           plugin_isocalendar: yes
 
-      - uses: lowlighter/metrics@v4.7.0
+      - uses: lowlighter/metrics@latest
         with:
-          filename: lowlighter/metrics@latest
+          filename: studio/metrics.plugin.topics.icons.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: "header"
           plugin_topics: true
@@ -41,7 +41,7 @@ jobs:
           plugin_achievements: yes
           plugin_achievements_only: '["sponsor","maintainer","octonaut"]'  # Array fix
 
-      - uses: lowlighter/metrics@v4.7.0
+      - uses: lowlighter/metrics@latest
         with:
           filename: studio/metrics.plugin.habits.charts.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -52,7 +52,7 @@ jobs:
           config_timezone: Africa/Lagos
 
       # Classic (unchanged, but pinned)
-      - uses: lowlighter/metrics@v4.7.0
+      - uses: lowlighter/metrics@latest
         with:
           filename: studio/metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
