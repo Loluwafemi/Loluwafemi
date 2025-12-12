@@ -8,7 +8,7 @@
 ![Metrics](studio/metrics.plugin.topics.icons.svg)
 
 > #### Achievements
-[![Femi's GitHub stats](https://github-readme-stats.vercel.app/api?username=loluwafemi)](https://github.com/loluwafemi/github-readme-stats)
+![Femi's GitHub stats](studio/metrics.plugin.achievements.svg)
 
 > #### Activities
 ![Metrics](studio/metrics.plugin.habits.charts.svg)
