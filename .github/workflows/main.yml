@@ -27,19 +27,23 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: studio/metrics.plugin.topics.icons.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: "header"
-          plugin_topics: true
-          # plugin_topics_limit: 0
-          plugin_topics_mode: icons
+          token: NOT_NEEDED
+          base: ""
+          plugin_topics: yes
+          plugin_topics_limit: 12
+
 
       - uses: lowlighter/metrics@latest
         with:
           filename: studio/metrics.plugin.achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: "header"
+          base: ""
           plugin_achievements: yes
-          plugin_achievements_only: '["sponsor","maintainer","octonaut"]'  # Array fix
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: X
 
       - uses: lowlighter/metrics@latest
         with:
@@ -58,6 +62,14 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           plugin_lines: yes
+
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.traffic.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: repositories
+          plugin_traffic: yes
 
       # Commit generated files
       - name: Commit metrics
