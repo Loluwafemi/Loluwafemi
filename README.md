@@ -7,14 +7,15 @@
 > #### Expertise
 ![Metrics](studio/metrics.plugin.topics.icons.svg)
 
-> #### Achievements
-![Femi's GitHub stats](studio/metrics.plugin.achievements.svg)
-
 > #### Activities
 ![Metrics](studio/metrics.plugin.habits.charts.svg)
 
 > #### Stats
 ![Metrics](studio/metrics.classic.svg)
+
+
+> #### Traffic
+![Metrics](studio/metrics.plugin.traffic.svg)
 
 
 <!-- 
