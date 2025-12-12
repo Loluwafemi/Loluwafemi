@@ -1,59 +1,73 @@
 name: Metrics
 on:
-  # Schedule daily updates
-  schedule: 
+  schedule:
     - cron: "0 0 * * *"
-  # (optional) Run workflow manually
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
-  push: 
+  push:
     branches: ["master", "main"]
+    paths-ignore: ["studio/*.svg"]  # Avoid re-runs on metric updates
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    environment: 
-      name: production
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Single-plugin steps (pinned, with base consistency)
+      - uses: lowlighter/metrics@v4.7.0  # Pin to stable version
         with:
           filename: studio/metrics.plugin.isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+          base: "header"  # Add for consistency
           plugin_isocalendar: yes
-          
-      - uses: lowlighter/metrics@latest
+
+      - uses: lowlighter/metrics@v4.7.0
         with:
           filename: studio/metrics.plugin.topics.icons.svg
-          token: NOT_NEEDED
-          base: ""
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: "header"
           plugin_topics: yes
           plugin_topics_limit: 0
           plugin_topics_mode: icons
-          
-      - uses: lowlighter/metrics@latest
+
+      - uses: lowlighter/metrics@v4.7.0
         with:
           filename: studio/metrics.plugin.achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+          base: "header"
           plugin_achievements: yes
-          plugin_achievements_only: sponsor, maintainer, octonaut
-          
-      - uses: lowlighter/metrics@latest
+          plugin_achievements_only: '["sponsor","maintainer","octonaut"]'  # Array fix
+
+      - uses: lowlighter/metrics@v4.7.0
         with:
           filename: studio/metrics.plugin.habits.charts.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+          base: "header"
           plugin_habits: yes
           plugin_habits_facts: no
           plugin_habits_charts: yes
           config_timezone: Africa/Lagos
-          
-      - uses: lowlighter/metrics@latest
+
+      # Classic (unchanged, but pinned)
+      - uses: lowlighter/metrics@v4.7.0
         with:
           filename: studio/metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           plugin_lines: yes
+
+      # Commit generated files
+      - name: Commit metrics
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add studio/*.svg
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update metrics [skip ci]" -a
+            git push
+          fi
