@@ -29,8 +29,8 @@ jobs:
           filename: studio/metrics.plugin.topics.icons.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: "header"
-          plugin_topics: yes
-          plugin_topics_limit: 0
+          plugin_topics: true
+          # plugin_topics_limit: 0
           plugin_topics_mode: icons
 
       - uses: lowlighter/metrics@v4.7.0
