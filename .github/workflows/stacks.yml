@@ -72,7 +72,7 @@ jobs:
           else:
               result = []
 
-          with open('studio/languages.json', 'w') as f:
+          with open('languages.json', 'w') as f:
               json.dump(result, f, indent=2)
 
           print("languages.json generated successfully")
