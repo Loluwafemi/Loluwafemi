@@ -1,0 +1,38 @@
+[
+  {
+    "stack": "Python",
+    "percentage": 54.69
+  },
+  {
+    "stack": "HTML",
+    "percentage": 18.93
+  },
+  {
+    "stack": "Svelte",
+    "percentage": 11.83
+  },
+  {
+    "stack": "CSS",
+    "percentage": 5.65
+  },
+  {
+    "stack": "JavaScript",
+    "percentage": 4.69
+  },
+  {
+    "stack": "TypeScript",
+    "percentage": 2.7
+  },
+  {
+    "stack": "Shell",
+    "percentage": 0.89
+  },
+  {
+    "stack": "Dockerfile",
+    "percentage": 0.37
+  },
+  {
+    "stack": "Batchfile",
+    "percentage": 0.25
+  }
+]
