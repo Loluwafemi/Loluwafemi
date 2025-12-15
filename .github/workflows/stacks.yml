@@ -1,0 +1,101 @@
+name: Update Repository Languages
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
+  workflow_dispatch:  # Allows manual triggering
+
+permissions:
+  contents: write
+
+jobs:
+  update-languages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Create script
+        run: |
+          cat << EOF > fetch_languages.py
+          import requests
+          import os
+          import json
+
+          token = os.environ['GITHUB_TOKEN']
+          owner = os.environ['GITHUB_REPOSITORY_OWNER']
+          headers = {
+              'Authorization': f'token {token}',
+              'Accept': 'application/vnd.github.v3+json'
+          }
+
+          # Fetch all non-fork repositories
+          repos = []
+          page = 1
+          while True:
+              response = requests.get(
+                  f'https://api.github.com/users/{owner}/repos?per_page=100&page={page}',
+                  headers=headers
+              )
+              if response.status_code != 200:
+                  break
+              data = response.json()
+              if not data:
+                  break
+              repos.extend([repo['full_name'] for repo in data if not repo['fork']])
+              page += 1
+
+          # Aggregate language bytes
+          lang_bytes = {}
+          for repo in repos:
+              response = requests.get(
+                  f'https://api.github.com/repos/{repo}/languages',
+                  headers=headers
+              )
+              if response.status_code == 200:
+                  data = response.json()
+                  for lang, byte_count in data.items():
+                      lang_bytes[lang] = lang_bytes.get(lang, 0) + byte_count
+
+          # Calculate total bytes
+          total_bytes = sum(lang_bytes.values())
+
+          # Compute percentages and sort descending
+          if total_bytes > 0:
+              sorted_langs = sorted(
+                  lang_bytes.items(),
+                  key=lambda x: x[1],
+                  reverse=True
+              )
+              output = [
+                  {
+                      'stack': lang,
+                      'percentage': round((byte_count / total_bytes) * 100, 2)
+                  }
+                  for lang, byte_count in sorted_langs
+              ]
+          else:
+              output = []
+
+          # Write to JSON file
+          with open('studio/languages.json', 'w') as f:
+              json.dump(output, f, indent=2)
+          EOF
+
+      - name: Run script
+        run: python fetch_languages.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add languages.json
+          git commit -m "Update languages.json with latest stats" || echo "No changes to commit"
+          git push
