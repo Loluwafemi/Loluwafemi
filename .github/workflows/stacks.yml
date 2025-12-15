@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 0 * * *'  # Daily at midnight UTC
   workflow_dispatch:    # Manual trigger
+  push:
+    branches: ["master", "main"]
+    paths-ignore: ["studio/*.json"]  # Avoid re-runs on metric updates
 
 permissions:
   contents: write
