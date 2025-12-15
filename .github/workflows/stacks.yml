@@ -18,7 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.metrics }}
+          token: ${{ secrets.METRICS_TOKEN }}
           
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,7 +33,7 @@ jobs:
 
       - name: Create script With ENV
         env:
-          GITHUB_TOKEN: ${{ secrets.metrics }}
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
           GITHUB_REPOSITORY_OWNER: "Loluwafemi" # Accessing a secret
 
         run: |
