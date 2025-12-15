@@ -2,11 +2,8 @@ name: Update Repository Languages
 
 on:
   schedule:
-    - cron: '0 0 * * *' 
-  workflow_dispatch:
-  push:
-    branches: ["master", "main"]
-    paths-ignore: ["studio/*.json"] 
+    - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
+  workflow_dispatch:  # Allows manual triggering
 
 permissions:
   contents: write
@@ -18,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,7 +25,6 @@ jobs:
       - name: Install dependencies
         # Command to install the requests package using pip
         run: |
-          python -m pip install --upgrade pip
           pip install requests
 
 
@@ -39,7 +35,7 @@ jobs:
           import os
           import json
 
-          token = os.environ['GITHUB_TOKEN']
+          token = os.environ['METRICS_TOKEN']
           owner = os.environ['GITHUB_REPOSITORY_OWNER']
           headers = {
               'Authorization': f'token {token}',
