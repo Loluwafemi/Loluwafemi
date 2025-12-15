@@ -3,7 +3,7 @@ name: Update Repository Languages
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
-  workflow_dispatch:  # Allows manual triggering
+  workflow_dispatch: 
   push:
     branches: ["master", "main"]
     paths-ignore: ["studio/*.json"]  # Avoid re-runs on metric updates
