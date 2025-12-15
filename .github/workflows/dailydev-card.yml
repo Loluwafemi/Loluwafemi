@@ -16,4 +16,5 @@ jobs:
         uses: dailydotdev/action-devcard@3.0.0
         with:
           user_id: if6VpnHYCwT7Ofg19R2IP
+          filename: studio/devcard.png
           commit_message: "chore: update devcard ${filename}"
