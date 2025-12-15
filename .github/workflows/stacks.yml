@@ -18,10 +18,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.METRICS_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
           GITHUB_REPOSITORY_OWNER: "Loluwafemi" # Accessing a secret
-
+          
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
