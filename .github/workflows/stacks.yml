@@ -18,7 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.metrics }}
           
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,10 +31,11 @@ jobs:
           pip install requests
 
 
-      - name: Create script
+      - name: Create script With ENV
         env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.metrics }}
           GITHUB_REPOSITORY_OWNER: "Loluwafemi" # Accessing a secret
+
         run: |
           cat << EOF > fetch_languages.py
           import requests
