@@ -9,7 +9,7 @@
 
 <br/>
 
-- 🔭 I’m currently: **Freelancing** <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="45" />
+- 🔭 I’m currently: **Freelancing** <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="45" /> & **A Startup Founder**  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Rocket.gif" width="45" />
 
 - 🌱 I’m currently learning: **Web Application Developing** <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
 
