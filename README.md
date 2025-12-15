@@ -159,7 +159,12 @@
     <img src="studio/fire.gif" alt="fire"  width="350" height="250"/>
 </p>
 
-<h4 align="center">Made with <img src="studio/hearts_gif.gif" width="25" height="25"/> by Femi</h4>
+<br/>
+
+<h4 align="left">Want To Support My Projects?</h4> 
+
+[![Buy Me A Coffee](https://img.buymeacoffee.com/button-api/?text=Sponsor%20Me%20on%20GitHub&emoji=🚀&slug=default&button_colour=ffdd30&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff)](https://buymeacoffee.com/loluwafemi)
+
 
 <p align="right">
   <a href="#top">
