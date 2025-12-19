@@ -1,38 +1,38 @@
 [
   {
     "stack": "Python",
-    "percentage": 54.69
+    "percentage": 47.11
   },
   {
     "stack": "HTML",
-    "percentage": 18.93
+    "percentage": 16.57
   },
   {
     "stack": "Svelte",
-    "percentage": 11.83
-  },
-  {
-    "stack": "CSS",
-    "percentage": 5.65
-  },
-  {
-    "stack": "JavaScript",
-    "percentage": 4.69
+    "percentage": 14.53
   },
   {
     "stack": "TypeScript",
-    "percentage": 2.7
+    "percentage": 10.97
+  },
+  {
+    "stack": "CSS",
+    "percentage": 5.23
+  },
+  {
+    "stack": "JavaScript",
+    "percentage": 4.28
   },
   {
     "stack": "Shell",
-    "percentage": 0.89
+    "percentage": 0.77
   },
   {
     "stack": "Dockerfile",
-    "percentage": 0.37
+    "percentage": 0.32
   },
   {
     "stack": "Batchfile",
-    "percentage": 0.25
+    "percentage": 0.22
   }
 ]
