@@ -1,38 +1,66 @@
 [
   {
     "stack": "Python",
-    "percentage": 47.16
+    "percentage": 39.55
   },
   {
     "stack": "HTML",
-    "percentage": 16.58
+    "percentage": 14.37
   },
   {
     "stack": "Svelte",
-    "percentage": 14.41
+    "percentage": 12.09
+  },
+  {
+    "stack": "Dart",
+    "percentage": 11.81
   },
   {
     "stack": "TypeScript",
-    "percentage": 11.02
+    "percentage": 9.24
   },
   {
     "stack": "CSS",
-    "percentage": 5.24
+    "percentage": 4.39
   },
   {
     "stack": "JavaScript",
-    "percentage": 4.29
+    "percentage": 3.59
+  },
+  {
+    "stack": "CMake",
+    "percentage": 2.2
+  },
+  {
+    "stack": "C++",
+    "percentage": 1.02
   },
   {
     "stack": "Shell",
-    "percentage": 0.77
+    "percentage": 0.64
+  },
+  {
+    "stack": "Swift",
+    "percentage": 0.43
   },
   {
     "stack": "Dockerfile",
-    "percentage": 0.32
+    "percentage": 0.27
   },
   {
     "stack": "Batchfile",
-    "percentage": 0.22
+    "percentage": 0.18
+  },
+  {
+    "stack": "C",
+    "percentage": 0.17
+  },
+  {
+    "stack": "Kotlin",
+    "percentage": 0.03
+  },
+  {
+    "stack": "Objective-C",
+    "percentage": 0.01
   }
 ]
