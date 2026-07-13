@@ -1,43 +1,43 @@
 [
   {
     "stack": "Svelte",
-    "percentage": 34.07
+    "percentage": 33.47
   },
   {
     "stack": "Python",
-    "percentage": 22.63
+    "percentage": 23.99
   },
   {
     "stack": "TypeScript",
-    "percentage": 20.7
+    "percentage": 20.34
   },
   {
     "stack": "HTML",
-    "percentage": 7.71
+    "percentage": 7.57
   },
   {
     "stack": "JavaScript",
-    "percentage": 5.38
+    "percentage": 5.28
   },
   {
     "stack": "Dart",
-    "percentage": 4.94
+    "percentage": 4.85
   },
   {
     "stack": "CSS",
-    "percentage": 2.5
+    "percentage": 2.46
   },
   {
     "stack": "CMake",
-    "percentage": 0.92
+    "percentage": 0.9
   },
   {
     "stack": "C++",
-    "percentage": 0.43
+    "percentage": 0.42
   },
   {
     "stack": "Shell",
-    "percentage": 0.27
+    "percentage": 0.26
   },
   {
     "stack": "Swift",
