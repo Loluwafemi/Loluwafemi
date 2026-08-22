@@ -1,27 +1,27 @@
 [
   {
     "stack": "Svelte",
-    "percentage": 33.47
+    "percentage": 33.56
   },
   {
     "stack": "Python",
-    "percentage": 23.99
+    "percentage": 23.8
   },
   {
     "stack": "TypeScript",
-    "percentage": 20.34
+    "percentage": 20.39
   },
   {
     "stack": "HTML",
-    "percentage": 7.57
+    "percentage": 7.59
   },
   {
     "stack": "JavaScript",
-    "percentage": 5.28
+    "percentage": 5.3
   },
   {
     "stack": "Dart",
-    "percentage": 4.85
+    "percentage": 4.86
   },
   {
     "stack": "CSS",
@@ -37,7 +37,7 @@
   },
   {
     "stack": "Shell",
-    "percentage": 0.26
+    "percentage": 0.27
   },
   {
     "stack": "Swift",
