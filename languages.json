@@ -1,62 +1,78 @@
 [
   {
-    "stack": "Svelte",
-    "percentage": 33.56
-  },
-  {
     "stack": "Python",
-    "percentage": 23.8
+    "percentage": 93.05
   },
   {
     "stack": "TypeScript",
-    "percentage": 20.39
+    "percentage": 3.17
   },
   {
-    "stack": "HTML",
-    "percentage": 7.59
-  },
-  {
-    "stack": "JavaScript",
-    "percentage": 5.3
-  },
-  {
-    "stack": "Dart",
-    "percentage": 4.86
-  },
-  {
-    "stack": "CSS",
-    "percentage": 2.46
-  },
-  {
-    "stack": "CMake",
-    "percentage": 0.9
+    "stack": "Svelte",
+    "percentage": 1.15
   },
   {
     "stack": "C++",
-    "percentage": 0.42
+    "percentage": 0.9
   },
   {
-    "stack": "Shell",
-    "percentage": 0.27
-  },
-  {
-    "stack": "Swift",
-    "percentage": 0.18
-  },
-  {
-    "stack": "Dockerfile",
-    "percentage": 0.11
-  },
-  {
-    "stack": "Batchfile",
-    "percentage": 0.08
+    "stack": "JavaScript",
+    "percentage": 0.52
   },
   {
     "stack": "C",
-    "percentage": 0.07
+    "percentage": 0.26
+  },
+  {
+    "stack": "HTML",
+    "percentage": 0.25
+  },
+  {
+    "stack": "CSS",
+    "percentage": 0.18
+  },
+  {
+    "stack": "Cython",
+    "percentage": 0.16
+  },
+  {
+    "stack": "Dart",
+    "percentage": 0.16
+  },
+  {
+    "stack": "PowerShell",
+    "percentage": 0.09
   },
   {
     "stack": "Kotlin",
+    "percentage": 0.03
+  },
+  {
+    "stack": "CMake",
+    "percentage": 0.03
+  },
+  {
+    "stack": "Assembly",
+    "percentage": 0.01
+  },
+  {
+    "stack": "Shell",
+    "percentage": 0.01
+  },
+  {
+    "stack": "Batchfile",
+    "percentage": 0.01
+  },
+  {
+    "stack": "Dockerfile",
+    "percentage": 0.01
+  },
+  {
+    "stack": "Swift",
+    "percentage": 0.01
+  },
+  {
+    "stack": "Jinja",
     "percentage": 0.01
   },
   {
